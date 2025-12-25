@@ -554,9 +554,12 @@ nav a {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Shared form input styling */
 .checkout input,
 .checkout textarea,
-.checkout select {
+.checkout select,
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 16px;
@@ -565,14 +568,18 @@ nav a {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1rem;
     box-sizing: border-box;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .checkout input:focus,
 .checkout textarea:focus,
-.checkout select:focus {
-    outline: none;
+.checkout select:focus,
+.contact input:focus,
+.contact textarea:focus {
+    outline: 2px solid #0b3c5d;
+    outline-offset: 2px;
     border-color: #0b3c5d;
+    box-shadow: 0 0 0 3px rgba(11, 60, 93, 0.1);
 }
 
 .checkout label {
@@ -627,24 +634,7 @@ nav a {
     margin-top: 24px;
 }
 
-.contact input,
-.contact textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1rem;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-    outline: none;
-    border-color: #0b3c5d;
-}
+/* Contact-specific textarea styling */
 
 .contact textarea {
     min-height: 120px;
@@ -806,10 +796,13 @@ footer a:hover {
 
 /* Hover and Focus States for Accessibility */
 button:focus,
-.btn:focus,
-input:focus,
-textarea:focus,
-select:focus {
+.btn:focus {
+    outline: 2px solid #0b3c5d;
+    outline-offset: 2px;
+}
+
+/* Link focus states */
+a:focus {
     outline: 2px solid #0b3c5d;
     outline-offset: 2px;
 }
