@@ -1,0 +1,65 @@
+<!-- =========================
+FILE: checkout.html (Checkout)
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout | Minaato Cold Store</title>
+<link rel="stylesheet" href="style.css" />
+<script src="config.js"></script>
+<script src="shop.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="header-bar">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Minaato Cold Store logo" class="logo" />
+      <h1>Checkout</h1>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+<p class="tagline">Frozen Fish & Chicken – Afari</p>
+
+<section class="checkout">
+  <div id="checkout-summary"></div>
+
+  <h3>Customer Details</h3>
+  <form id="checkout-form">
+    <input type="text" id="cust-name" placeholder="Full Name" required />
+    <input type="tel" id="cust-phone" placeholder="Phone (WhatsApp)" required />
+    <input type="text" id="cust-address" placeholder="Delivery Address" />
+    <label>
+      Delivery Option:
+      <select id="delivery-option">
+        <option value="pickup">Pickup</option>
+        <option value="delivery">Delivery</option>
+      </select>
+    </label>
+    <textarea id="cust-notes" placeholder="Notes (e.g., preferred time)"></textarea>
+    <div class="actions">
+      <button type="submit" class="btn">Place Order via WhatsApp</button>
+      <button type="button" class="btn" id="email-order-btn">Email Order</button>
+      <button type="button" class="btn" id="pay-card-btn">Pay with Card</button>
+      <a class="btn" href="cart.html">Back to Cart</a>
+    </div>
+  </form>
+  <section class="secure" aria-label="Secure checkout">
+    <div class="secure-badge">🔒 Secure Checkout — SSL & Paystack Protected</div>
+    <p style="margin-top:8px;color:#2e7d32;">We use trusted payment partners and protect your data.</p>
+  </section>
+</section>
+
+<footer>
+<p>Same-day delivery for orders before 4pm.</p>
+</footer>
+</body>
+</html>

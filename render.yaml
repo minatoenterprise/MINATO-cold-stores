@@ -1,0 +1,31 @@
+services:
+  - type: static_site
+    name: minato-coldstore
+    rootDir: .
+    buildCommand: ""
+    publishPath: .
+    autoDeploy: true
+    headers:
+      - path: /*
+        name: Strict-Transport-Security
+        value: max-age=31536000; includeSubDomains
+    envVars:
+      - key: API_BASE_URL
+        value: ""
+        # Set to your backend URL after deploy, e.g. https://minato-backend.onrender.com
+
+  - type: web
+    name: minato-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: "npm install"
+    autoDeploy: true
+    plan: free
+    healthCheckPath: "/"
+    envVars:
+      - key: PAYSTACK_SECRET_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      - key: PORT
+        value: "10000"

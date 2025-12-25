@@ -1,0 +1,134 @@
+<!-- =========================
+FILE: products.html (Products Page)
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Products | Minaato Cold Store</title>
+<link rel="stylesheet" href="style.css" />
+<script src="config.js"></script>
+<script src="shop.js" defer></script>
+</head>
+<body>
+<header>
+	<div class="header-bar">
+		<a href="index.html" class="brand">
+			<img src="assets/images/logo.png" alt="Minaato Cold Store logo" class="logo" />
+			<h1>Our Products</h1>
+		</a>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="products.html">Products</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</div>
+</header>
+<p class="tagline">Where Freshness Docks</p>
+
+
+<section class="products">
+	<div class="card">
+		<h3>Frozen Fish</h3>
+		<div class="product" data-id="mackerel" data-name="Mackerel" data-price="25">
+			<div class="thumb-wrap">
+				<img class="thumb" src="assets/images/FISH.jpg" alt="Mackerel - frozen fish" loading="lazy" data-full="assets/images/FISH.jpg" />
+				<span class="label">Fish</span>
+			</div>
+			<p>Mackerel — <strong>GHS 25.00</strong> per pack <span class="rating" aria-label="4.5 stars">★★★★☆</span></p>
+			<div class="actions">
+				<button class="btn add-to-cart">Add to Cart</button>
+				<button class="btn buy-now">Buy Now</button>
+				<a class="btn btn-whatsapp order-whatsapp" href="#">Order Now</a>
+				<a class="btn btn-email order-email" href="#">Email Us</a>
+			</div>
+		</div>
+		<div class="product" data-id="tilapia" data-name="Tilapia" data-price="30">
+			<div class="thumb-wrap">
+				<img class="thumb" src="assets/images/FISH.jpg" alt="Tilapia - frozen fish" loading="lazy" data-full="assets/images/FISH.jpg" />
+				<span class="label">Fish</span>
+			</div>
+			<p>Tilapia — <strong>GHS 30.00</strong> per fish <span class="rating" aria-label="4 stars">★★★★☆</span></p>
+			<div class="actions">
+				<button class="btn add-to-cart">Add to Cart</button>
+				<button class="btn buy-now">Buy Now</button>
+				<a class="btn btn-whatsapp order-whatsapp" href="#">Order Now</a>
+				<a class="btn btn-email order-email" href="#">Email Us</a>
+			</div>
+		</div>
+		<div class="product" data-id="salmon-cuts" data-name="Salmon Cuts" data-price="40">
+			<div class="thumb-wrap">
+				<img class="thumb" src="assets/images/FISH.jpg" alt="Salmon cuts - frozen fish" loading="lazy" data-full="assets/images/FISH.jpg" />
+				<span class="label">Fish</span>
+			</div>
+			<p>Salmon Cuts — <strong>GHS 40.00</strong> per pack <span class="rating" aria-label="5 stars">★★★★★</span></p>
+			<div class="actions">
+				<button class="btn add-to-cart">Add to Cart</button>
+				<button class="btn buy-now">Buy Now</button>
+				<a class="btn btn-whatsapp order-whatsapp" href="#">Order Now</a>
+				<a class="btn btn-email order-email" href="#">Email Us</a>
+			</div>
+		</div>
+	</div>
+	<div class="card">
+		<h3>Frozen Chicken</h3>
+		<div class="product" data-id="wings" data-name="Chicken Wings" data-price="35">
+			<div class="thumb-wrap">
+				<img class="thumb" src="assets/images/CHICKEN.jpg" alt="Chicken wings - frozen" loading="lazy" data-full="assets/images/CHICKEN.jpg" />
+				<span class="label">Chicken</span>
+			</div>
+			<p>Chicken Wings — <strong>GHS 35.00</strong> per kg <span class="rating" aria-label="4.5 stars">★★★★☆</span></p>
+			<div class="actions">
+				<button class="btn add-to-cart">Add to Cart</button>
+				<button class="btn buy-now">Buy Now</button>
+				<a class="btn btn-whatsapp order-whatsapp" href="#">Order Now</a>
+				<a class="btn btn-email order-email" href="#">Email Us</a>
+			</div>
+		</div>
+		<div class="product" data-id="thighs" data-name="Chicken Thighs" data-price="32">
+			<div class="thumb-wrap">
+				<img class="thumb" src="assets/images/CHICKEN.jpg" alt="Chicken thighs - frozen" loading="lazy" data-full="assets/images/CHICKEN.jpg" />
+				<span class="label">Chicken</span>
+			</div>
+			<p>Chicken Thighs — <strong>GHS 32.00</strong> per kg <span class="rating" aria-label="4 stars">★★★★☆</span></p>
+			<div class="actions">
+				<button class="btn add-to-cart">Add to Cart</button>
+				<button class="btn buy-now">Buy Now</button>
+				<a class="btn btn-whatsapp order-whatsapp" href="#">Order Now</a>
+				<a class="btn btn-email order-email" href="#">Email Us</a>
+			</div>
+		</div>
+		<div class="product" data-id="drumsticks" data-name="Chicken Drumsticks" data-price="30">
+			<div class="thumb-wrap">
+				<img class="thumb" src="assets/images/CHICKEN.jpg" alt="Chicken drumsticks - frozen" loading="lazy" data-full="assets/images/CHICKEN.jpg" />
+				<span class="label">Chicken</span>
+			</div>
+			<p>Chicken Drumsticks — <strong>GHS 30.00</strong> per kg <span class="rating" aria-label="4 stars">★★★★☆</span></p>
+			<div class="actions">
+				<button class="btn add-to-cart">Add to Cart</button>
+				<button class="btn buy-now">Buy Now</button>
+				<a class="btn btn-whatsapp order-whatsapp" href="#">Order Now</a>
+				<a class="btn btn-email order-email" href="#">Email Us</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="cta-email">
+	<a class="btn btn-email" href="#" data-email-cta="Bulk Order Inquiry">Email Us About Bulk Prices</a>
+</section>
+
+<section class="secure" aria-label="Secure checkout">
+	<div class="secure-badge">🔒 Secure Checkout — SSL & Paystack Protected</div>
+	<p style="margin-top:8px;color:#2e7d32;">We use trusted payment partners and protect your data.</p>
+	</section>
+
+
+<footer>
+<p>Bulk orders available for chop bars and restaurants.</p>
+<p>Email: <a href="mailto:minatoenterprisecom@gmail.com">minatoenterprisecom@gmail.com</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- =========================
+FILE: cart.html (Shopping Cart)
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cart | Minaato Cold Store</title>
+<link rel="stylesheet" href="style.css" />
+<script src="config.js"></script>
+<script src="shop.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="header-bar">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Minaato Cold Store logo" class="logo" />
+      <h1>Your Cart</h1>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span class="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+<p class="tagline">Frozen Fish & Chicken – Afari</p>
+
+<section class="cart">
+  <div id="cart-items"></div>
+  <div id="cart-summary"></div>
+  <div class="actions">
+    <a class="btn" href="products.html">Continue Shopping</a>
+    <a class="btn" id="checkout-btn" href="checkout.html">Checkout</a>
+    <button class="btn" id="clear-cart">Clear Cart</button>
+  </div>
+</section>
+
+<footer>
+<p>Orders can be placed via phone or WhatsApp.</p>
+</footer>
+</body>
+</html>
